@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cmsis os api list | ZGENE_SHARES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="内核控制函数12345osStatus osKernelInitialize (void);//内核初始化osStatus osKernelStart (void);//内核开始运行int32_t osKernelRunning(void);//返回值为1表示正在运行作用：系统是否正常工作uint32_t osKernelSysTick (void);//系统当前节拍数 作用：毫秒级计时osKer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cmsis os api list">
+<meta property="og:url" content="http://zgene.me/2018/07/27/cmsis-os-api-list/index.html">
+<meta property="og:site_name" content="ZGENE_SHARES">
+<meta property="og:description" content="内核控制函数12345osStatus osKernelInitialize (void);//内核初始化osStatus osKernelStart (void);//内核开始运行int32_t osKernelRunning(void);//返回值为1表示正在运行作用：系统是否正常工作uint32_t osKernelSysTick (void);//系统当前节拍数 作用：毫秒级计时osKer">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-27T06:45:04.247Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cmsis os api list">
+<meta name="twitter:description" content="内核控制函数12345osStatus osKernelInitialize (void);//内核初始化osStatus osKernelStart (void);//内核开始运行int32_t osKernelRunning(void);//返回值为1表示正在运行作用：系统是否正常工作uint32_t osKernelSysTick (void);//系统当前节拍数 作用：毫秒级计时osKer">
+  
+    <link rel="alternate" href="/atom.xml" title="ZGENE_SHARES" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">ZGENE_SHARES</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://zgene.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-cmsis-os-api-list" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/27/cmsis-os-api-list/" class="article-date">
+  <time datetime="2018-07-27T06:41:40.000Z" itemprop="datePublished">2018-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      cmsis os api list
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="内核控制函数"><a href="#内核控制函数" class="headerlink" title="内核控制函数"></a>内核控制函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">osStatus <span class="title">osKernelInitialize</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//内核初始化</span></span><br><span class="line"><span class="function">osStatus <span class="title">osKernelStart</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//内核开始运行</span></span><br><span class="line"><span class="keyword">int32_t</span> osKernelRunning(<span class="keyword">void</span>);<span class="comment">//返回值为1表示正在运行作用：系统是否正常工作</span></span><br><span class="line"><span class="keyword">uint32_t</span> osKernelSysTick (<span class="keyword">void</span>);<span class="comment">//系统当前节拍数 作用：毫秒级计时</span></span><br><span class="line">osKernelSysTickMicroSec(microsec)<span class="comment">//微妙（宏函数） 作用：微秒级计时</span></span><br></pre></td></tr></table></figure>
+<h2 id="线程管理函数"><a href="#线程管理函数" class="headerlink" title="线程管理函数"></a>线程管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osThreadDef(name, thread, priority, instances, stacksz)<span class="comment">//(宏函数)作用：定义osThreadDef_t结构体</span></span><br><span class="line">osThread(name)<span class="comment">//(宏函数)作用：获取os_thread_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osThreadId <span class="title">osThreadCreate</span> <span class="params">(<span class="keyword">const</span> osThreadDef_t *thread_def, <span class="keyword">void</span> *argument)</span></span>;<span class="comment">//错误返回NULL作用：创建线程</span></span><br><span class="line"><span class="function">osThreadId <span class="title">osThreadGetId</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//返回当前线程</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadTerminate</span> <span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//终结线程</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadYield</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//调度一次</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadSetPriority</span> <span class="params">(osThreadId thread_id, osPriority priority)</span></span>;<span class="comment">//设置线程优先级</span></span><br><span class="line"><span class="function">osPriority <span class="title">osThreadGetPriority</span> <span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//获取线程优先级</span></span><br></pre></td></tr></table></figure>
+<h2 id="等待函数"><a href="#等待函数" class="headerlink" title="等待函数"></a>等待函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">osStatus <span class="title">osDelay</span> <span class="params">(<span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//毫秒级延时</span></span><br><span class="line"><span class="function">osEvent <span class="title">osWait</span> <span class="params">(<span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//未实现</span></span><br></pre></td></tr></table></figure>
+<h2 id="软件定时器管理函数"><a href="#软件定时器管理函数" class="headerlink" title="软件定时器管理函数"></a>软件定时器管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">osTimerDef(name, function)<span class="comment">//宏函数 作用：定义os_timer_def_##name结构体</span></span><br><span class="line">osTimer(name)<span class="comment">//宏函数 作用：定义os_timer_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osTimerId <span class="title">osTimerCreate</span> <span class="params">(<span class="keyword">const</span> osTimerDef_t *timer_def, os_timer_type type, <span class="keyword">void</span> *argument)</span></span>;<span class="comment">//参数二：是否重复回调作用：创建软件定时器</span></span><br><span class="line"><span class="function">osStatus <span class="title">osTimerStart</span> <span class="params">(osTimerId timer_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//开始定时</span></span><br><span class="line"><span class="function">osStatus <span class="title">osTimerStop</span> <span class="params">(osTimerId timer_id)</span></span>;<span class="comment">//停止定时</span></span><br><span class="line"><span class="function">osStatus <span class="title">osTimerDelete</span> <span class="params">(osTimerId timer_id)</span></span>;<span class="comment">//删除定时器</span></span><br></pre></td></tr></table></figure>
+<h2 id="信号管理函数"><a href="#信号管理函数" class="headerlink" title="信号管理函数"></a>信号管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int32_t</span> osSignalSet (osThreadId thread_id, <span class="keyword">int32_t</span> signals);<span class="comment">//带通知值的任务通知</span></span><br><span class="line"><span class="keyword">int32_t</span> osSignalClear (osThreadId thread_id, <span class="keyword">int32_t</span> signals);<span class="comment">//未实现</span></span><br><span class="line"><span class="function">osEvent <span class="title">osSignalWait</span> <span class="params">(<span class="keyword">int32_t</span> signals, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//参数二：取出值后位置零 作用：等待通知到来</span></span><br></pre></td></tr></table></figure>
+<h2 id="互斥锁管理函数"><a href="#互斥锁管理函数" class="headerlink" title="互斥锁管理函数"></a>互斥锁管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">osMutexDef(name)<span class="comment">//（宏函数） 作用：定义os_mutex_def_##name结构体</span></span><br><span class="line">osMutex(name)<span class="comment">//宏函数 作用：定义os_mutex_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osMutexId <span class="title">osMutexCreate</span> <span class="params">(<span class="keyword">const</span> osMutexDef_t *mutex_def)</span></span>;<span class="comment">//创建互斥锁</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMutexWait</span> <span class="params">(osMutexId mutex_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//锁定互斥锁</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMutexRelease</span> <span class="params">(osMutexId mutex_id)</span></span>;<span class="comment">//解锁互斥锁</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMutexDelete</span> <span class="params">(osMutexId mutex_id)</span></span>;<span class="comment">//删除互斥锁</span></span><br></pre></td></tr></table></figure>
+<h2 id="信号量管理函数"><a href="#信号量管理函数" class="headerlink" title="信号量管理函数"></a>信号量管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">osSemaphoreDef(name)<span class="comment">//（宏函数） 作用：定义os_semaphore_def_##name结构体</span></span><br><span class="line">osSemaphore(name)<span class="comment">//宏函数 作用：定义os_semaphore_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osSemaphoreId <span class="title">osSemaphoreCreate</span> <span class="params">(<span class="keyword">const</span> osSemaphoreDef_t *semaphore_def, <span class="keyword">int32_t</span> count)</span></span>;<span class="comment">//创建信号量</span></span><br><span class="line"><span class="keyword">int32_t</span> osSemaphoreWait (osSemaphoreId semaphore_id, <span class="keyword">uint32_t</span> millisec);<span class="comment">//信号量减一</span></span><br><span class="line"><span class="function">osStatus <span class="title">osSemaphoreRelease</span> <span class="params">(osSemaphoreId semaphore_id)</span></span>;<span class="comment">//信号量加一</span></span><br><span class="line"><span class="function">osStatus <span class="title">osSemaphoreDelete</span> <span class="params">(osSemaphoreId semaphore_id)</span></span>;<span class="comment">//删除信号量</span></span><br></pre></td></tr></table></figure>
+<h2 id="内存池管理函数"><a href="#内存池管理函数" class="headerlink" title="内存池管理函数"></a>内存池管理函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">osPoolDef(name, no, type)//参数二：内存池size 参数三：成员size作用：定义os_pool_def_##name结构体</span><br><span class="line">osPool(name)//宏函数 作用：定义os_pool_def_##name结构体的指针</span><br><span class="line">osPoolId osPoolCreate (const osPoolDef_t *pool_def);//创建内存池</span><br><span class="line">void *osPoolAlloc (osPoolId pool_id);//分配内存</span><br><span class="line">void *osPoolCAlloc (osPoolId pool_id);//分配内存并且清零</span><br><span class="line">osStatus osPoolFree (osPoolId pool_id, void *block);//释放内存</span><br></pre></td></tr></table></figure>
+<h2 id="队列管理函数"><a href="#队列管理函数" class="headerlink" title="队列管理函数"></a>队列管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">osMessageQDef(name, queue_sz, type)<span class="comment">//参数二：队列size 参数三：成员size 作用：定义os_messageQ_def_##name结构体</span></span><br><span class="line">osMessageQ(name)<span class="comment">//宏函数 作用：定义os_messageQ_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osMessageQId <span class="title">osMessageCreate</span> <span class="params">(<span class="keyword">const</span> osMessageQDef_t *queue_def, osThreadId thread_id)</span></span>;<span class="comment">//创建队列</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMessagePut</span> <span class="params">(osMessageQId queue_id, <span class="keyword">uint32_t</span> info, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//向队列中放入消息</span></span><br><span class="line"><span class="function">osEvent <span class="title">osMessageGet</span> <span class="params">(osMessageQId queue_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//从队列中获取消息</span></span><br></pre></td></tr></table></figure>
+<h2 id="邮箱队列管理函数"><a href="#邮箱队列管理函数" class="headerlink" title="邮箱队列管理函数"></a>邮箱队列管理函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">osMailQDef(name, queue_sz, type)<span class="comment">//参数二：邮箱size 参数三：消息size 作用：定义os_mailQ_def_##name结构体</span></span><br><span class="line">osMailQ(name)<span class="comment">//宏函数 作用：定义os_mailQ_def_##name结构体的指针</span></span><br><span class="line"><span class="function">osMailQId <span class="title">osMailCreate</span> <span class="params">(<span class="keyword">const</span> osMailQDef_t *queue_def, osThreadId thread_id)</span></span>;<span class="comment">//创建邮箱</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">osMailAlloc</span> <span class="params">(osMailQId queue_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//分配一个消息的空间</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">osMailCAlloc</span> <span class="params">(osMailQId queue_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//分配一个消息的空间并且清零</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMailPut</span> <span class="params">(osMailQId queue_id, <span class="keyword">void</span> *mail)</span></span>;<span class="comment">//将成员丢到邮箱中</span></span><br><span class="line"><span class="function">osEvent <span class="title">osMailGet</span> <span class="params">(osMailQId queue_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//从邮箱中获取消息</span></span><br><span class="line"><span class="function">osStatus <span class="title">osMailFree</span> <span class="params">(osMailQId queue_id, <span class="keyword">void</span> *mail)</span></span>;<span class="comment">//释放消息空间</span></span><br></pre></td></tr></table></figure>
+<h2 id="特殊功能函数"><a href="#特殊功能函数" class="headerlink" title="特殊功能函数"></a>特殊功能函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">osSystickHandler</span><span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//定时器中断处理函数</span></span><br><span class="line"><span class="function">osThreadState <span class="title">osThreadGetState</span><span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//获取线程状态</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadIsSuspended</span><span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//线程是否被挂起</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadSuspend</span> <span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//挂起线程</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadResume</span> <span class="params">(osThreadId thread_id)</span></span>;<span class="comment">//恢复调度</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadSuspendAll</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//挂起所有线程</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadResumeAll</span> <span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//恢复调度所有线程</span></span><br><span class="line"><span class="function">osStatus <span class="title">osDelayUntil</span> <span class="params">(<span class="keyword">uint32_t</span> *PreviousWakeTime, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//绝对延时</span></span><br><span class="line"><span class="function">osStatus <span class="title">osThreadList</span> <span class="params">(<span class="keyword">uint8_t</span> *buffer)</span></span>;<span class="comment">//获取任务信息 任务名、优先级</span></span><br><span class="line"><span class="function">osEvent <span class="title">osMessagePeek</span> <span class="params">(osMessageQId queue_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//瞥一眼队列中有没有消息</span></span><br><span class="line"><span class="function">osMutexId <span class="title">osRecursiveMutexCreate</span> <span class="params">(<span class="keyword">const</span> osMutexDef_t *mutex_def)</span></span>;<span class="comment">//创建递归互斥锁</span></span><br><span class="line"><span class="function">osStatus <span class="title">osRecursiveMutexRelease</span> <span class="params">(osMutexId mutex_id)</span></span>;<span class="comment">//释放递归互斥锁</span></span><br><span class="line"><span class="function">osStatus <span class="title">osRecursiveMutexWait</span> <span class="params">(osMutexId mutex_id, <span class="keyword">uint32_t</span> millisec)</span></span>;<span class="comment">//锁定递归互斥锁</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgene.me/2018/07/27/cmsis-os-api-list/" data-id="cjk3mh3wc0000gwswc4vholv7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/27/cmsis-os-api-list/">cmsis os api list</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/27/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 zhouge<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
