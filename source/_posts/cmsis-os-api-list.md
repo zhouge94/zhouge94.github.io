@@ -1,8 +1,3 @@
----
-title: cmsis os api list
-date: 2018-07-27 14:41:40
-tags:
----
 ## 内核控制函数
 ```c
 osStatus osKernelInitialize (void);//内核初始化
@@ -70,7 +65,7 @@ osStatus osSemaphoreDelete (osSemaphoreId semaphore_id);//删除信号量
 ```
 
 ## 内存池管理函数
-```
+```c
 osPoolDef(name, no, type)//参数二：内存池size 参数三：成员size作用：定义os_pool_def_##name结构体
 osPool(name)//宏函数 作用：定义os_pool_def_##name结构体的指针
 osPoolId osPoolCreate (const osPoolDef_t *pool_def);//创建内存池
